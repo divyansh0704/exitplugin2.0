@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-1</title>
+    <link rel="stylesheet" href="k.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="https://www.nda.nic.in/site-page-viewer/13">About</a>
+            <a href="https://www.nda.nic.in/site-page-viewer/4">Service Training</a>
+            <a href="https://www.nda.nic.in/site-page-viewer/10">Academics</a>
+            <a href="https://www.nda.nic.in/site-page-viewer/25">Outdoor Training</a>
+            <a href="https://www.nda.nic.in/life-as-a-cadet">Cadet's Corner</a>
+            <a href="https://www.nda.nic.in/site-page-viewer/12">Administration</a>
+            <a href="https://www.nda.nic.in/men-at-helm">Hall Of Fame</a>
+        </nav>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class='bx bx-anchor'></i>NATIONAL DEFENCE ACADEMY</h2>
+            <div class="text-sci">
+                <h2><span>Message From The Commandant</span></h2>
+                <p>The National Defence Academy is an iconic institution and hallmark of global excellence in the sphere of military education. Over the years it has emerged as a unique Tri-Services military academy, attracting the best of youth from our nation and also from friendly foreign countries and transforming them into officers and gentlemen. During the last seven decades of its glorious existence, the National Defence Academy has grown both in grace and grandeur and from its portals have emerged ‘Leaders of Men’, who have demonstrated the essence of inter-services camaraderie and jointmanship thereby upholding the faith and vision of its founding fathers. Apart from leaders of men, the alumni have proved to be great mountaineers, cosmonauts, sportsmen, researchers, creative writers, artists, corporate honchos and more recently, Olympic champions. Their achievements are all pervading and showcased in every echelon of our Armed Forces and also in the civil society. The ‘Cradle’ has indeed rocked the nascent youth and groomed them into ‘Leaders’ who have lived up to its ethos: ‘सेवा परमो धर्म:’ (Service Before Self).</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-telegram' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Sign In</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" id="open-popup-modal" class="btn" >Sign In</button>
+                    <div class="login-register">
+                        <p>Don't have a account?<a href="#" class="register-link">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <header><h1 class="logo"><i class='bx bx-anchor'></i>MINERVA DEFENCE ACADEMY<i class='bx bx-anchor'></i></h1>
+        </header>
+		<p>We are India’s Premier Armed Forces Preparatory Academy Estd. In 1955.</p>
+		<h3>PREPRATION FOR WRITTEN EXAMINATION FOR ANY DEFENCE EXAM</h3>
+		<p><b>NEW BATCH STARTING SOON</b></p>
+		<img src="https://minervaacademy.com/wp-content/uploads/2021/09/army_man.png" class="img-fluid" alt="">
+		<a href="#" class="btn">Enroll Now</a>
+        
+		<p>&ensp;</p>
+		<u>FOR MORE INFORMATION:</u>
+		<p>&nbsp;</p>
+        <button type="button" class="modal-close" >OK</button>
+		<footer>Contact Us At: 9877004473 Or Mail Us At: minervadefenceacademy@gmail.com</footer>
+    </div>
+<script>
+    var modal = document.getElementById('popup');
+var btn = document.getElementById("open-popup-modal");
+var span = document.getElementsByClassName("modal-close")[0];
+btn.onclick = function() {
+modal.style.display = "block";
+}
+span.onclick = function() {
+modal.style.display = "none";
+}
+window.onload = function() {
+setTimeout(function() {
+modal.style.display = 'block';
+}, 3000);
+}
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>  
+</body>
+</html>
